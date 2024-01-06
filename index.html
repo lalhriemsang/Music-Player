@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/07e74caee5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="music-player.css" />
+  </head>
+  <body>
+    <nav class="expand-lg">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <a
+          href="#"
+          class="navbar-brand text-no-decoration d-flex align-items-center"
+        >
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/009/428/325/non_2x/3d-social-media-icons-music-free-png.png"
+            alt=""
+            id="logo"
+          />
+          <span class="arial">
+            <span class="text-lightgray">Ninjas</span><br />
+            <span class="text-white fw-550">Studios</span>
+          </span>
+        </a>
+        <a
+          href="#navbar-content"
+          class="navbar-toggler text-no-decoration fs-2"
+        >
+          <i class="fa-solid fa-bars text-lightgray hover-white"></i>
+        </a>
+        <div
+          class="collapse d-flex flex-g-1 justify-content-between align-items-center"
+          id="navbar-content"
+        >
+          <ul class="dropdown-menu d-flex">
+            <li>
+              <a
+                href="#"
+                class="text-no-decoration text-lightgray arial hover-white"
+                >Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-no-decoration text-lightgray arial hover-white"
+                >Favorites
+              </a>
+            </li>
+          </ul>
+          <div
+            class="collapse-right-items d-flex justify-content-between align-items-center px-sm-5"
+            id="nav-right"
+          >
+            <form action="" class="btn-search flex-g-1 m-5">
+              <button type="submit">
+                <i
+                  class="fa-solid fa-magnifying-glass text-lightgray hover-white"
+                ></i>
+              </button>
+              <input
+                type="text"
+                class="text-lightgray flex-g-1"
+                placeholder="Search"
+              />
+              <button link="#">
+                <i
+                  class="fa-solid fa-microphone text-lightgray hover-white"
+                ></i>
+              </button>
+            </form>
+            <div class="m-5">
+              <i class="fa-solid fa-bell text-lightgray hover-white"></i>
+            </div>
+            <div class="m-5">
+              <img
+                src="https://media.istockphoto.com/id/1176856220/vector/lightbulb-doodle-in-a-naive-hand-drawn-style.jpg?s=612x612&w=0&k=20&c=r-5IusE-igKUOKK16efhscTZwfvVNXb0fbhjMB3I7Yc=
+                "
+                alt=""
+                id="my-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <content class="d-flex flex-wrap justify-content-between">
+      <main id="main">
+        <div class="slider d-flex">
+          <input type="radio" name="slide-btn" id="s1" />
+          <input type="radio" name="slide-btn" id="s2" checked />
+          <input type="radio" name="slide-btn" id="s3" />
+
+          <label for="s1" id="label1">
+            <img
+              src="https://img.freepik.com/free-vector/realistic-galaxy-background_52683-12122.jpg"
+              alt=""
+              class="img-fluid d-none"
+            />
+          </label>
+          <label for="s2" id="label2">
+            <img
+              src="https://img.freepik.com/premium-photo/universe-background_495832-920.jpg"
+              alt=""
+              class="img-fluid d-none"
+            />
+          </label>
+          <label for="s3" id="label3">
+            <img
+              src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg"
+              alt=""
+              class="img-fluid d-none"
+            />
+          </label>
+        </div>
+
+        <div class="latest-release">
+          <p class="fw-550 text-lightgray arial d-block fs-1-pt-5">
+            Latest Release
+          </p>
+          <div
+            class="latest-songs-playlist text-lightgray d-flex flex-col justify-content-between"
+          >
+            <div class="d-flex flex-wrap justify-content-between">
+              <div
+                class="latest-song d-flex justify-content-between align-items-center flex-g-1 flex-shrink-1 m-10"
+              >
+                <div
+                  class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+                >
+                  <img
+                    src="https://media.istockphoto.com/id/1025141940/photo/woman-hands-place-together-like-praying-in-front-of-nature-green-bokeh-and-blue-sky-background.jpg?s=612x612&w=0&k=20&c=PsBpeIrVgsiBrAstZK4RMPAbqC-y1vfq7H5dna15Dqc="
+                    alt=""
+                    class="latest-song-img pe-10"
+                  />
+                  <span>
+                    <span class="fw-550">Blessings</span><br /><span
+                      >Aug 11,2017
+                    </span>
+                  </span>
+                </div>
+                <span>
+                  <div class="dropdown">
+                    <a
+                      href="#latest-song-dropdown"
+                      class="text-no-decoration text-lightgray"
+                    >
+                      ...
+                    </a>
+                    <ul
+                      class="dropdown-menu arial text-black"
+                      id="latest-song-dropdown"
+                    >
+                      <li class="d-flex justify-content-end">
+                        <a
+                          href="#"
+                          class="text-no-decoration text-red hover-red"
+                          ><i class="fa-solid fa-square-xmark"></i
+                        ></a>
+                      </li>
+                      <li>Playlist</li>
+                      <li><hr /></li>
+                      <li class="pb-5">Favorite Songs</li>
+                    </ul>
+                  </div>
+                  <br />
+                  4.33
+                </span>
+              </div>
+              <div
+                class="latest-song d-flex justify-content-between align-items-center flex-g-1 flex-shrink-1 m-10"
+              >
+                <div
+                  class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+                >
+                  <img
+                    src="https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais"
+                    alt=""
+                    class="latest-song-img pe-10"
+                  />
+                  <span>
+                    <span class="fw-550">Forests</span><br /><span
+                      >Aug 11,2017</span
+                    ></span
+                  >
+                </div>
+                <span>
+                  <div class="dropdown">
+                    <a
+                      href="#latest-song-dropdown2"
+                      class="text-no-decoration text-lightgray"
+                    >
+                      ...
+                    </a>
+                    <ul
+                      class="dropdown-menu arial text-black"
+                      id="latest-song-dropdown2"
+                    >
+                      <li class="d-flex justify-content-end">
+                        <a
+                          href="#"
+                          class="text-no-decoration text-red hover-red"
+                          ><i class="fa-solid fa-square-xmark"></i
+                        ></a>
+                      </li>
+                      <li>Playlist</li>
+                      <li><hr /></li>
+                      <li class="pb-5">Favorite Songs</li>
+                    </ul>
+                  </div>
+                  <br />
+                  4.33
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div
+                class="latest-song d-flex justify-content-between align-items-center flex-g-1 flex-shrink-1 m-10"
+              >
+                <div
+                  class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+                >
+                  <img
+                    src="https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-4_1562-741.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=sph"
+                    alt=""
+                    class="latest-song-img pe-10"
+                  />
+                  <span>
+                    <span class="fw-550">Heavens</span><br /><span
+                      >Aug 11,2017</span
+                    ></span
+                  >
+                </div>
+                <span>
+                  <div class="dropdown">
+                    <a
+                      href="#latest-song-dropdown3"
+                      class="text-no-decoration text-lightgray"
+                    >
+                      ...
+                    </a>
+                    <ul
+                      class="dropdown-menu arial text-black"
+                      id="latest-song-dropdown3"
+                    >
+                      <li class="d-flex justify-content-end">
+                        <a
+                          href="#"
+                          class="text-no-decoration text-red hover-red"
+                          ><i class="fa-solid fa-square-xmark"></i
+                        ></a>
+                      </li>
+                      <li>Playlist</li>
+                      <li><hr /></li>
+                      <li class="pb-5">Favorite Songs</li>
+                    </ul>
+                  </div>
+                  <br />
+                  4.33
+                </span>
+              </div>
+              <div
+                class="latest-song d-flex justify-content-between align-items-center flex-g-1 flex-shrink-1 m-10"
+              >
+                <div
+                  class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+                >
+                  <img
+                    src="https://img.freepik.com/premium-photo/underwater-world-depth-ocean-underwater-gorges-tunnel-lots-organisms-ai_129911-4405.jpg"
+                    alt=""
+                    class="latest-song-img pe-10"
+                  />
+                  <span>
+                    <span class="fw-550">Marine</span><br /><span
+                      >Aug 11,2017</span
+                    ></span
+                  >
+                </div>
+                <span>
+                  <div class="dropdown">
+                    <a
+                      href="#latest-song-dropdown4"
+                      class="text-no-decoration text-lightgray"
+                    >
+                      ...
+                    </a>
+                    <ul
+                      class="dropdown-menu arial text-black"
+                      id="latest-song-dropdown4"
+                    >
+                      <li class="d-flex justify-content-end">
+                        <a
+                          href="#"
+                          class="text-no-decoration text-red hover-red"
+                          ><i class="fa-solid fa-square-xmark"></i
+                        ></a>
+                      </li>
+                      <li>Playlist</li>
+                      <li><hr /></li>
+                      <li class="pb-5">Favorite Songs</li>
+                    </ul>
+                  </div>
+                  <br />
+                  4.33
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-playlist d-flex w-100">
+          <p class="fw-550 text-lightgray arial d-block fs-1-pt-5">
+            Single Playlist
+          </p>
+          <ul
+            class="single-playlist-img-container d-flex justify-content-around flex-wrap dropdown-menu"
+            id="single-playlist-img-container"
+          >
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://www.louderthanthemusic.com/images/doc/darlenezschech.jpg"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Darlene Zschech</span>
+            </li>
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1214238206314582017/_4T6eD4Y_400x400.jpg"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Don Meon</span>
+            </li>
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273f6dd8fe62ac702b7dfe1a1cf"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Robin Mark</span>
+            </li>
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://yt3.googleusercontent.com/U9iuK8dK1CaHXIbZzhFMcvMRfUCx1Le8d-XpFPCj9jMG0QhbL5ty2NlhM0WLRiitYWDKsjDkTA=s900-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Chris Tomlin</span>
+            </li>
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://www.wayfm.com/wp-content/uploads/2015/03/Mark-Hall.jpg"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Mark Hall</span>
+            </li>
+            <li
+              class="d-flex flex-col justify-content-center align-items-center text-lightgray arial"
+            >
+              <a href="music-player2.html">
+                <img
+                  src="https://yt3.googleusercontent.com/ytc/AIf8zZSMSqE4V86MLop2C43ncHbqbH8ymUhQAT-0IZRv6Q=s900-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="single-playlist-img img-fluid"
+                />
+              </a>
+              <span>Solomon Hmar</span>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="station-container d-flex justify-content-between fs-1-pt-1 fw-900 text-white"
+        >
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="music-station"></div>
+            </div>
+            <span class="genre-type">&nbsp;</span>
+          </div>
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="genre1"></div>
+            </div>
+            <span class="genre-type">Worship</span>
+          </div>
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="genre2"></div>
+            </div>
+            <span class="genre-type">Pleasant</span>
+          </div>
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="genre3"></div>
+            </div>
+            <span class="genre-type">Nostalgic</span>
+          </div>
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="genre4"></div>
+            </div>
+            <span class="genre-type">Happy</span>
+          </div>
+          <div class="station-img-container d-flex flex-col align-items-center">
+            <div class="station-img">
+              <div id="genre5"></div>
+            </div>
+            <span class="genre-type">Fun</span>
+          </div>
+        </div>
+
+        <div class="genre-img-container d-flex text-white fw-550 my-10">
+          <div
+            class="d-flex flex-col justify-content-center align-items-center genre-img flex-shrink-1"
+            id="genre-img1"
+          >
+            <span class="genre-type fs-2 break-word">Worship</span>
+          </div>
+          <div
+            class="d-flex flex-col justify-content-center align-items-center genre-img flex-shrink-1"
+            id="genre-img2"
+          >
+            <span class="genre-type fs-2 break-word">Nostalgic</span>
+          </div>
+          <div
+            class="d-flex flex-col justify-content-center align-items-center genre-img flex-shrink-1"
+            id="genre-img3"
+          >
+            <span class="genre-type fs-2 break-word">Happy</span>
+          </div>
+        </div>
+
+        <div class="latest-english">
+          <p class="fw-550 text-lightgray arial d-block fs-1-pt-5">
+            Latest English
+          </p>
+          <div
+            class="latest-songs-playlist text-lightgray d-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://media.istockphoto.com/id/1025141940/photo/woman-hands-place-together-like-praying-in-front-of-nature-green-bokeh-and-blue-sky-background.jpg?s=612x612&w=0&k=20&c=PsBpeIrVgsiBrAstZK4RMPAbqC-y1vfq7H5dna15Dqc="
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Blessings</span><br /><span
+                    >Aug 11,2017
+                  </span>
+                </span>
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown5"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown5"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Forests</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown6"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown6"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-4_1562-741.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=sph"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Heavens</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown7"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown7"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/premium-photo/underwater-world-depth-ocean-underwater-gorges-tunnel-lots-organisms-ai_129911-4405.jpg"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Marine</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown8"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown8"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="latest-hindi">
+          <p class="fw-550 text-lightgray arial d-block fs-1-pt-5">
+            Latest Hindi
+          </p>
+          <div
+            class="latest-songs-playlist text-lightgray d-flex flex-wrap justify-content-between"
+          >
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://media.istockphoto.com/id/1025141940/photo/woman-hands-place-together-like-praying-in-front-of-nature-green-bokeh-and-blue-sky-background.jpg?s=612x612&w=0&k=20&c=PsBpeIrVgsiBrAstZK4RMPAbqC-y1vfq7H5dna15Dqc="
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Blessings</span><br /><span
+                    >Aug 11,2017
+                  </span>
+                </span>
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown9"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown9"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Forests</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown10"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown10"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/free-photo/sky-clouds-cinematic-clouds-wallpaper-4_1562-741.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=sph"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Heavens</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown11"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown11"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+            <div
+              class="latest-song d-flex justify-content-between align-items-center flex-shrink-1 m-10"
+            >
+              <div
+                class="latest-song-image-and-title d-flex flex-wrap align-items-center"
+              >
+                <img
+                  src="https://img.freepik.com/premium-photo/underwater-world-depth-ocean-underwater-gorges-tunnel-lots-organisms-ai_129911-4405.jpg"
+                  alt=""
+                  class="latest-song-img pe-10"
+                />
+                <span>
+                  <span class="fw-550">Marine</span><br /><span
+                    >Aug 11,2017</span
+                  ></span
+                >
+              </div>
+              <span>
+                <div class="dropdown">
+                  <a
+                    href="#latest-song-dropdown12"
+                    class="text-no-decoration text-lightgray"
+                  >
+                    ...
+                  </a>
+                  <ul
+                    class="dropdown-menu arial text-black"
+                    id="latest-song-dropdown12"
+                  >
+                    <li class="d-flex justify-content-end">
+                      <a href="#" class="text-no-decoration text-red hover-red"
+                        ><i class="fa-solid fa-square-xmark"></i
+                      ></a>
+                    </li>
+                    <li>Playlist</li>
+                    <li><hr /></li>
+                    <li class="pb-5">Favorite Songs</li>
+                  </ul>
+                </div>
+                <br />
+                4.33
+              </span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside>
+        <div
+          class="aside-header d-flex flex-wrap justify-content-between align-items-center break-word"
+        >
+          <span class="text-lightgray arial fw-550">Queue</span>
+          <div class="dropdown">
+            <a
+              href="#aside-dropdown"
+              class="text-no-decoration text-lightgreen arial hover-lightgreen"
+            >
+              Queue <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu arial" id="aside-dropdown">
+              <li class="d-flex justify-content-end">
+                <a href="#" class="text-no-decoration text-red hover-red"
+                  ><i class="fa-solid fa-square-xmark"></i
+                ></a>
+              </li>
+              <li>Playlist</li>
+              <li><hr /></li>
+              <li class="pb-5">Favorite Songs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="aside-content text-lightgray">
+          <div class="aside-playlist d-flex flex-wrap">
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-chart-simple text-skyblue pe-10"></i>
+                <img
+                  src="https://img.freepik.com/premium-vector/park-rainy-autumn-day-picture-created-with-watercolors_858664-5428.jpg"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Rainy</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">02 </span>
+                <img
+                  src="https://img.freepik.com/free-photo/lone-tree_181624-46361.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Night</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">03 </span>
+                <img
+                  src="https://img.freepik.com/free-photo/beautiful-view-lake-surrounded-by-mountains-with-glowing-sun-background_181624-24090.jpg"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Lakeside</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">04 </span>
+                <img
+                  src="https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_52683-60365.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703376000&semt=ais"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Clouds</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">05 </span>
+                <img
+                  src="https://img.freepik.com/premium-photo/mountains-dawn-creative-digital-illustration-painting-poetic-scenery-background_743855-2809.jpg?w=2000"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Fantasy</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">06 </span>
+                <img
+                  src="https://t3.ftcdn.net/jpg/05/25/89/16/360_F_525891606_EsS60RgrJxtzeaoWVMXcgeOXoBEWGPX7.jpg"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Jungle</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+            <div
+              class="aside-song d-flex justify-content-between align-items-center p-10 mt-10"
+            >
+              <div
+                class="aside-img-and-title d-flex justify-content-center align-items-center"
+              >
+                <!-- <i class="fa-solid fa-chart-simple hover-skyblue pe-10"></i> -->
+                <span class="me-5">07 </span>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYYre-aUrWSccTIoVjAvlNKdN2c4Rv4PWAfg&usqp=CAU"
+                  class="aside-img"
+                  alt=""
+                />
+                <span class="aside-song-title px-10 break-word">
+                  <span class="fw-550">Narnia</span><br /><span>Bloom</span>
+                </span>
+              </div>
+              <span class="d-flex align-items-center">
+                <i class="fa-solid fa-heart hover-red pe-10"></i>
+                <i class="fa-solid fa-plus hover-lightgreen"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </content>
+    <footer>
+      <div
+        class="audio d-flex justify-content-between align-items-center p-5 text-gray arial"
+      >
+        <div class="current-song d-flex">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/c/ce/Shout_To_The_Lord_3_Album_Cover.jpg"
+            alt=""
+            class="current-song-img me-10"
+          />
+          <div class="current-song-descr me-10">
+            <p class="current-song-title fw-550">Shout to the Lord</p>
+            <p class="current-song-artist fs-pt-7">Hillsong</p>
+          </div>
+          <div class="current-song-icons d-flex align-items-center flex-wrap">
+            <i class="fa-solid fa-heart m-5"></i>
+            <i class="fa-solid fa-ban m-5"></i>
+          </div>
+        </div>
+        <audio controls>
+          <source src="your-audio-file.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </footer>
+  </body>
+</html>
